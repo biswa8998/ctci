@@ -1,7 +1,7 @@
 package array_strings;
 
 public class Urlify {
-	public static String convert(String str) {
+	public static String solution(String str) {
 		char[] carr = str.toCharArray();
 		char[] regex = new char[] { '%', '2', '0' };
 		boolean isNonSpaceFound = false;
@@ -29,6 +29,6 @@ public class Urlify {
 	
 	public static void main(String[] args)
 	{
-		System.out.println(convert("Mr John Smith    "));
+		System.out.println(solution("Mr John Smith    "));
 	}
 }
